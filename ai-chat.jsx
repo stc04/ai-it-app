@@ -9,7 +9,7 @@ const ChatPage = () => {
     setLoading(true);
     const messages = [...conversation, { role: 'user', content: inputValue }];
 
-    const req = await fetch('http://47.195.18.209:11434/v1/chat/completions', {
+    const req = await fetch('REACT_APP_API', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
